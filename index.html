@@ -8,6 +8,9 @@
     <!-- Link to Font Awesome for Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     
+    <!-- Link to Inter Font from Google Fonts for a modern look -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
     <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="styles.css"> 
 </head>
@@ -16,7 +19,7 @@
     <!-- Header and Navigation -->
     <header>
         <div class="container">
-            <nav>
+            <nav role="navigation">
                 <div class="logo">Mridul Kumar</div>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -31,71 +34,84 @@
 
     <main class="container">
         
-        <!-- 1. Home Section -->
-        <section id="home" class="card">
+        <!-- 1. Home Section (Hero) -->
+        <section id="home" class="card hero-section">
             <img 
-                src="https://placehold.co/150x150/4dc0b5/1f2937?text=MK" 
+                src="https://placehold.co/180x180/4dc0b5/1f2937?text=MK" 
                 alt="Profile Picture Placeholder" 
                 class="profile-img"
-                onerror="this.onerror=null; this.src='https://placehold.co/150x150/999/ffffff?text=Image+Error'"
+                onerror="this.onerror=null; this.src='https://placehold.co/180x180/999/ffffff?text=Image+Error'"
             >
             <h1>Mridul Kumar</h1>
-            <p>25/A04/017</p>
-            <p>B.Tech(CSE)</p>
+            <p class="subtitle">25/A04/017</p>
+            <p class="role">B.Tech(CSE)</p>
+            <a href="#contact" class="cta-button" title="Contact Mridul Kumar">Get In Touch <i class="fas fa-arrow-right"></i></a>
         </section>
 
         <!-- 2. About Me Section -->
         <section id="about">
-            <h2>About Me</h2>
-            <div class="card">
+            <h2><i class="fas fa-user-circle"></i> About Me</h2>
+            <div class="card about-card">
                 <p>
-                    I am a computer science(CSE) student at Delhi Technological University(DTU).I'm Passionate about technology and solving problems through codes. I started my coding journey in class 12th and resumed coding in college.I am currently learning web designing and C programming and I'm eager to expand my knowledge into JavaScript and modern frameworks. 
-                <p>
-                    This portfolio represents most of my web development knowledge. .
+                    I am a computer science(CSE) student at **Delhi Technological University (DTU)**. I'm passionate about technology and solving problems through codes. I started my coding journey in class 12th and resumed coding in college. I am currently learning web designing and C programming and I'm eager to expand my knowledge into JavaScript and modern frameworks. 
                 </p>
+                <p>
+                    This portfolio represents most of my web development knowledge.
+                </p>
+                <!-- Clickable link to search DTU -->
+                <a href="https://www.google.com/search?q=Delhi+Technological+University+DTU+CSE" target="_blank" class="info-link" title="Search DTU">Learn more about DTU <i class="fas fa-external-link-alt"></i></a>
             </div>
         </section>
 
         <!-- 3. Education / Skills Section -->
         <section id="skills">
-            <h2>Education & Skills</h2>
+            <h2><i class="fas fa-laptop-code"></i> Education & Skills</h2>
             <div class="card">
-                <h3>Education</h3>
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
                 <ul>
-                    <li><strong>B.Tech in Computer Science</strong> (2025 – 2029) - Delhi Technological University, Delhi</li>
-                    <li><strong>Higher Secondary Education</strong> (2023 – 2025) - Vivekanand School, Delhi</li>
+                    <li><strong>B.Tech in Computer Science</strong> (2025 – 2029) - Delhi Technological University, Delhi <a href="https://www.google.com/search?q=Delhi+Technological+University" target="_blank" title="Search DTU"><i class="fas fa-search"></i></a></li>
+                    <li><strong>Higher Secondary Education</strong> (2023 – 2025) - Vivekanand School, Delhi <a href="https://www.google.com/search?q=Vivekanand+School+Delhi" target="_blank" title="Search Vivekanand School"><i class="fas fa-search"></i></a></li>
                 </ul>
                 
-                <h3>Core Skills</h3>
+                <h3><i class="fas fa-tools"></i>  Skills </h3>
                 <ul class="skill-list">
-                    <li>HTML</li>
-                    <li>CSS (Basic Layouts)</li>
-                    <li>Responsive Design Basics</li>
-                    <li>Using Git/GitHub (Version Control)</li>
+                    <!-- Skills are now wrapped in anchor tags for clickable Google search -->
+                    <li><a href="https://www.google.com/search?q=HTML+programming" target="_blank" title="Search HTML5">HTML</a></li>
+                    <li><a href="https://www.google.com/search?q=CSS+styling" target="_blank" title="Search CSS3">CSS (Basic Layouts)</a></li>
+                    <li><a href="https://www.google.com/search?q=responsive+web+design+principles" target="_blank" title="Search Responsive Design">Responsive Design Basics</a></li>
+                    <li><a href="https://www.google.com/search?q=Git+and+GitHub" target="_blank" title="Search Git/GitHub Tutorial">Using Git/GitHub </a></li>
+                    <li><a href="https://www.google.com/search?q=C+programming+language" target="_blank" title="Search C Programming">C Programming</a></li>
+                    
                 </ul>
             </div>
         </section>
 
         <!-- 4. Projects / Portfolio Section -->
         <section id="projects">
-            <h2>Projects</h2>
-            <div class="card">
+            <h2><i class="fas fa-folder-open"></i> Projects</h2>
+            <div class="card project-grid">
                 
                 <div class="project">
-                    <h3>Blog Layout</h3>
+                    <!-- Placeholder Image for visual appeal -->
+                    <img src="https://placehold.co/400x200/4dc0b5/ffffff?text=Blog+Layout" alt="Project Image: Blog Layout" class="project-img">
+                    <h3>My Blog Layout</h3>
                     <p>A simple static website demonstrating the use of HTML for structure (headings, paragraphs, lists) and CSS for basic typography and box model spacing.</p>
                     
                 </div>
 
                 <div class="project">
+                    <!-- Placeholder Image for visual appeal -->
+                    <img src="https://placehold.co/400x200/34495e/ffffff?text=Recipe+Card" alt="Project Image: Recipe Card" class="project-img">
                     <h3>Basic HTML Recipe Card</h3>
                     <p>A project focusing solely on CSS styling, including setting colors, borders, and margins to create an aesthetically pleasing digital recipe card.</p>
                     
                 </div>
 
                 <div class="project">
+                    <!-- Placeholder Image for visual appeal -->
+                    <img src="https://placehold.co/400x200/1f2937/ffffff?text=Responsive+Page" alt="Project Image: Responsive Page" class="project-img">
                     <h3>Responsive Profile Page</h3>
-                    <p>My first attempt at responsive design, using simple media queries in pure CSS to ensure the content looks good on both mobile phones and desktop screens.</p>
+                    <p>It is a responsive design, using simple media queries in pure CSS to ensure the content looks good on both mobile phones and desktop screens.</p>
                     
                 </div>
 
@@ -104,19 +120,19 @@
 
         <!-- 5. Contact Information Section -->
         <section id="contact">
-            <h2>Contact Information</h2>
+            <h2><i class="fas fa-envelope"></i> Connect With Me</h2>
             <div class="card">
                 <address>
-                    Email: <a href="mailto:mridulkumardtu@example.com">mridulkumardtu@example.com</a><br>
-                    Phone:+91-8860594103<br>
+                    <p><i class="fas fa-at"></i> Email: <a href="mailto:mridulkumardtu@gmail.com" title="Email me">mridulkumardtu@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> Phone: <a href="tel:+918860594103" title="Call me">+91-8860594103</a></p>
                 </address>
 
                 <div class="social-links">
-                    <a href="https://linkedin.com/in/mridul-kumar" target="_blank" title="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://linkedin.com/in/mridul-kumar" target="_blank" title="Visit my LinkedIn profile">
+                        <i class="fab fa-linkedin fa-fw"></i> LinkedIn
                     </a>
-                    <a href="https://github.com/Ndroid-mskt" target="_blank" title="GitHub">
-                        <i class="fab fa-github"></i>
+                    <a href="https://github.com/Ndroid-mskt" target="_blank" title="Visit my GitHub profile">
+                        <i class="fab fa-github fa-fw"></i> GitHub
                     </a>
                 </div>
             </div>
@@ -126,9 +142,8 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Mridul Kumar. Portfolio.</p>
+        <p><i class="fas fa-code"></i> &copy; 2025 Mridul Kumar. All rights reserved.</p>
     </footer>
 
 </body>
-
 </html>
